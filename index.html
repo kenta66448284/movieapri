@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>YouTubeFocus</title>
+</head>
+<body>
+    <!-- 検索フォーム -->
+    <form class="search">
+        <input type="search" id="ytSearch" value="sumika" />
+        <button id="searchBtn">検索</button>
+    </form>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <!-- 1. ここの<div>タグがYoutubeの<iframe>に置き換わる。 -->
+        <div class="player">
+            <div id="player"></div>
+        </div>
+        <div class="main">
+            <button class="syutyubutton">集中する</button>
+            <li>
+                <select id="MovieId" class="ytMovie" name="ytMovie">
+                    <option selected>選択してください。</option>
+                    
+                    </option>
+                </select>
+            </li>
+            <section class="searchlist"></section>
+            <nav>
+                <ul>
+                    <li id="doplay" onclick="clickBtn1()"><img class="saisei" src="./images/play_icon_764-300x300.png" alt=""></li>
+                    <li id="dopause" onclick="clickBtn2()"><img class="teisi" src="./images/pose_icon_804-300x300.png" alt=""></li>
+                    <li id="mute">ミュート</li>
+                    <label
+                        >ボリューム<input type="range" min="0" max="100" name="volume" id="volume" value="50" />
+                        <span id="volumeNum"></span>
+                    </label>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+        <!-- 時間入力 -->
+        <div class="settei none">
+            <div class="settei__box">
+                <p>集中する時間</p>
+                <input class="sytutime" type="number">
+            </div>
+            <div class="settei__box">
+            <p>休憩する時間</p>
+                <input class="kyukei" type="number">
+                <input class="start" type="submit" value="始める">
+            </div>
+            
+        </div>
+        <form class="sousa">
+           
+        </form>
+        <!-- 作業中の画面 -->
+        <div class="syutyu none">
+            <div class="syutyu__box">
+                <p>集中する時間</p>
+                <p class="time"></p>
+            </div>
+            <div class="syutyu__box">
+                <p>休憩する時間</p>
+                <p class="kyukeitime"></p>
+            </div>
+            <p class="quiztext"></p>
+            <p>※正解すると休憩することができます！</p>
+            <div class="quiz">
+                
+            </div>
+            <p class="aori"></p>
+            <input class="kyukeibuton" type="submit" value="休憩する">
+            <!-- <button class="kyukeibuton">休憩する</button> -->
+        </div>
+        <!-- 休憩中の画面 -->
+        <div class="kyukeiarea none">
+            <p class="kyuke__text">休憩中、、休憩終了まで</p>
+            <p class="kyukeitimekyukei"></p>
+            <input class="kreturn" type="submit" value="戻る">
+            <!-- <button class="kreturn">戻る</button> -->
+        </div>
+        <script src="./js/youtube.js"></script>
+</body>
+</html>
+
+<!-- <div class="countdown-container">
+                <div class="time-container">
+                  <p class="time"><span id="hour"></span>hours</p>
+                  
+                  <p class="time"><span id="sec"></span>seconds</p>
+                </div>
+            </div> -->

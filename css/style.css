@@ -1,0 +1,90 @@
+body{
+    text-align: center;
+    background-color: #ededed;
+}
+li{
+    list-style: none;
+}
+
+#ytSearch{
+    background-color: #fff;
+}
+.main{
+    background-color: #ededed
+}
+input{
+    border: 1px #000 solid;
+}
+.search{
+    padding: 20px 0 ;
+    background-color: #ededed;
+}
+#searchBtn{
+    background-color: black;
+    color: white;
+}
+.none{
+    display: none;
+}
+#none{
+    display: none;
+}
+.kyukeibuton{
+    border: 1px #000 solid;
+    margin: 20px 0 ;
+    display: none;
+}
+.syutyubutton{
+    background-color: #fff;
+    border: 1px #000 solid;
+    margin: 20px;
+}
+.kreturn{
+    border: 1px #000 solid;
+}
+.start{
+    display: block;
+    margin: 20px auto;
+    border: 1px #000 solid;
+    background-color: #fff;
+}
+iframe{
+    max-width: 100%;
+}
+.ytMovie{
+    background-color: #fff;
+    border: 1px #000 solid;
+    width: 50%;
+}
+.saisei{
+    width: 15%;
+}
+.teisi{
+    width: 15%;
+}
+.settei__box{
+    margin: 20px 0;
+}
+.syutyu__box{
+    margin: 20px 0;
+}
+.kyukei__text{
+    margin: 20px 0;
+}
+.kyukeiarea{
+    margin: 20px 0 ;
+}
+.answerbutton{
+    border: 1px #000 solid;
+    margin: 0 10px;
+    background-color: #fff;
+}
+.quiztext{
+    margin: 20px 0;
+}
+.sytutime{
+    background-color: #fff;
+}
+.kyukei{
+    background-color: #fff;
+}
