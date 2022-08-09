@@ -314,7 +314,7 @@ function starts(minit){
                 alert("お疲れさまでした。");
                 stop();
             }
-        },1000)
+        },1000*60)
     }
 }
 kyukeibuton.addEventListener("click",function(){
@@ -353,7 +353,7 @@ function kyutarts(kinit){
                 alert("休憩が終了しました");
                 stopky();
             }
-        },1000)
+        },1000*60)
     }
 }
 kretrun.addEventListener("click",function(){
