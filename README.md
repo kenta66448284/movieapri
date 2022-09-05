@@ -1,8 +1,8 @@
 # OTENKI MUSIC
 
 
-2022 年度 Web デザイン学科 WS1「JavaScript 演習」課題 SSG で EC サイト。
+授業で作成したYouTubeAPIを使用したオリジナルアプリ
 
 ## 完成品
 
-- https://kentalog.work/weatherapri/
+- https://kentalog.work/movieapri/
